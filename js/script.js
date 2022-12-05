@@ -22,6 +22,8 @@ console.log('OK JS');
 const placeholder = document.getElementById('target');
 
 // 2- Chiedo all'utente il numero di km che deve percorrere 
-const kmRoute = parseInt(prompt('Quanti km devi percorrere?', 15).trim())
+const kmRoute = parseInt(prompt('Quanti km devi percorrere?', 15).trim());
 // // console.log(kmRoute);
-
+// 3- Chiedo all'utente la sua età 
+const userAge = parseInt(prompt('Quanti km devi percorrere?', 17).trim());
+// // console.log(kmRoute, userAge);
