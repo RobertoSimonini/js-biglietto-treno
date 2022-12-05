@@ -36,5 +36,9 @@ let ticketPrice =  kmRoute * 0.21;
 // 5- Creo le condizioni di sconto per i minorenni 
 if (userAge < 18) {
     console.log(ticketPrice = ticketPrice - ((ticketPrice * 20) / 100));
-    
 }
+
+if (userAge > 65) {
+    console.log(ticketPrice = ticketPrice - ((ticketPrice * 40) / 100));
+}
+
