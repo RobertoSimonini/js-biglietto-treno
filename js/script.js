@@ -21,5 +21,7 @@ console.log('OK JS');
 // 1- Prendo l'elemento dal DOM 
 const placeholder = document.getElementById('target');
 
-
+// 2- Chiedo all'utente il numero di km che deve percorrere 
+const kmRoute = parseInt(prompt('Quanti km devi percorrere?', 15).trim())
+// // console.log(kmRoute);
 
