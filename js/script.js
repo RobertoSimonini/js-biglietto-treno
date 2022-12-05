@@ -29,5 +29,12 @@ const userAge = parseInt(prompt('Quanti anni hai?', 17).trim());
 // // console.log(kmRoute, userAge);
 
 // 4- Calcolo il prezzo del biglietto
-let ticketPrice = kmRoute * 0.21 + '€';
-console.log(ticketPrice);
+let ticketPrice =  kmRoute * 0.21;
+// console.log(ticketPrice);
+
+
+// 5- Creo le condizioni di sconto per i minorenni 
+if (userAge < 18) {
+    console.log(ticketPrice = ticketPrice - ((ticketPrice * 20) / 100));
+    
+}
