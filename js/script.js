@@ -25,5 +25,9 @@ const placeholder = document.getElementById('target');
 const kmRoute = parseInt(prompt('Quanti km devi percorrere?', 15).trim());
 // // console.log(kmRoute);
 // 3- Chiedo all'utente la sua età 
-const userAge = parseInt(prompt('Quanti km devi percorrere?', 17).trim());
+const userAge = parseInt(prompt('Quanti anni hai?', 17).trim());
 // // console.log(kmRoute, userAge);
+
+// 4- Calcolo il prezzo del biglietto
+let ticketPrice = kmRoute * 0.21 + '€';
+console.log(ticketPrice);
