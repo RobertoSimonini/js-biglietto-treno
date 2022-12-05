@@ -29,16 +29,20 @@ const userAge = parseInt(prompt('Quanti anni hai?', 17).trim());
 // // console.log(kmRoute, userAge);
 
 // 4- Calcolo il prezzo del biglietto
-let ticketPrice =  kmRoute * 0.21;
-// console.log(ticketPrice);
+let ticketPrice = kmRoute * 0.21;
+
+let rounded = ticketPrice.toFixed(2);
+console.log(rounded);
 
 
-// 5- Creo le condizioni di sconto per i minorenni 
+// 5- Creo le condizioni di sconto per i minorenni
+
 if (userAge < 18) {
-    console.log(ticketPrice = ticketPrice - ((ticketPrice * 20) / 100));
+    let finalPrice = (rounded - ((rounded * 20) / 100));
+    console.log(finalPrice.toFixed(2));
 }
 
 if (userAge > 65) {
-    console.log(ticketPrice = ticketPrice - ((ticketPrice * 40) / 100));
+    let finalPrice = (rounded - ((rounded * 40) / 100));
+    console.log(finalPrice.toFixed(2));
 }
-
