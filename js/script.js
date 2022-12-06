@@ -20,10 +20,9 @@ console.log('OK JS');
 
 // 1- Prendo l'elemento dal DOM 
 const placeholder = document.getElementById('target');
-
 // 2- Chiedo all'utente il numero di km che deve percorrere 
 const kmRoute = parseInt(prompt('Quanti km devi percorrere?').trim());
-// // console.log(kmRoute);
+
 // 3- Chiedo all'utente la sua età 
 const userAge = parseInt(prompt('Quanti anni hai?').trim());
 // // console.log(kmRoute, userAge);
@@ -32,16 +31,14 @@ const userAge = parseInt(prompt('Quanti anni hai?').trim());
 let ticketPrice = kmRoute * 0.21;
 
 let rounded = ticketPrice.toFixed(2) + '€';
-// console.log(rounded);
+console.log(rounded);
 
 
 // 5- Creo le condizioni di sconto per i minorenni
 if (userAge < 18) {
     let finalPrice = (ticketPrice - ((ticketPrice * 20) / 100));
     console.log(finalPrice.toFixed(2) + '€');
-}
-// 6- Creo le condizioni di sconto per gli over 65
-if (userAge > 65) {
+}else if (userAge > 65) {
     let finalPrice = (ticketPrice - ((ticketPrice * 40) / 100));
     console.log(finalPrice.toFixed(2) + '€');
 }
